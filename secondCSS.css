@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "IranSans";
+    src : url("IRANSans.woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    src : url("Lato-Thin.ttf");
+}
+body  {
+    width : 100%;
+    padding : 0;
+    position: relative;
+    background: black;
+    font-family: IranSans;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+#why {
+    /*padding-top: 10%;*/
+    padding-top: 20%;
+    font-size: 70px;
+    margin: auto;
+    /*position: absolute;*/
+    text-align: center;
+    opacity: 0;
+}
+
+
+.init {
+    height: 90vh;
+    display: none;
+    float: right;
+    width: 33.3%;
+    text-align: center;
+    padding-top: 40vh;
+    vertical-align: middle;
+    font-size: 60px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    transition: 5s;
+}
+
+.fixed {
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    transition: 5s;
+}
+
+.fixed > div{
+    border-radius: 10px;
+    background: #0d8b4c;
+    transition: 5s;
+}
+
+#dars {
+    background: url("two.jpg");
+    box-sizing: content-box;
+
+}
+
+#dars div {
+    /*border-radius: 10px;*/
+    /*background: #0d8b4c;*/
+
+}
+
+#kar {
+    background: url("one.jpg") no-repeat -300px 0px ;
+    /*background-position: -50px 0;*/
+    background-size: cover;
+}
+
+#code{
+    background: url("coding.jpg") -400px 0;
+    /*background-size: cover;*/
+}
+
+svg {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 90vh;
+}
+
+path {
+    stroke-linecap: round;
+    stroke-width: 7px;
+    stroke: #0d8b4c;
+    /*stroke-dasharray: 2400;*/
+    /*stroke-dashoffset: 2400;*/
+    /*stroke-dashoffset: 1925;*/
+    /*stroke-dasharray: 2400;*/
+    /*stroke-dashoffset: 1200;*/
+    /*stroke-dasharray: 1600;*/
+    stroke-linejoin: round;
+    fill: #0d8b4c;
+    /*animation: nn 10s ease;*/
+}
+
+@keyframes nn {
+    10% {
+        stroke-dashoffset: 500;
+        stroke-dasharray: 500;
+    }
+    50% {
+        stroke-dashoffset: 800;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

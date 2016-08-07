@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="typed.js"></script>
+    <script>
+        $(function(){
+            $("#hi").typed({
+                strings: ["دانشکده مهندسی کامپیوتر و فناوری اطلاعات"],
+                typeSpeed: 50
+            });
+        });
+        setTimeout(function(){
+            $("#AUT").typed({
+                strings: ["AUT CEIT"],
+                typeSpeed: 50
+            });
+        } , 4000);
+    </script>
+
+    <title></title>
+</head>
+<body>
+    <div id="logo">
+        <svg class="progress" height="auto" width="100%" >
+            <defs>
+                <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                </filter>
+            </defs>
+            <g id="first" filter="url(#f1)">
+                <path  stroke="white" stroke-miterlimit="50" d="
+                M100 300 h -20 q -10 0 -10 -15 v -150 q 0 -10 10 -10  h 220 q 10 0 10 10 v 150 q 0 10 -10 10 h -80
+                v 40 q 0 10 10 10 h 70 l 20 30 h -260 l 20 -30 h 80 q 10 0 10 -10 v -26 q 0 -10 -10 -10
+                h -15 q -10 0 -10 -10 v -25 q 0 -5 5 -5 h -20 q -10 -2 -10 -5 c 8 -40 15 -80 40 -110
+                q 6 -12 30 -18 h 20 c 30 10 35 50 0 50 q -20 -8 -10 -30
+            "/>
+                <path id="saghe" stroke="white"  stroke-miterlimit="50" d="M 200 125 c -2 -10 2 -25 -15 -30 "/>
+                <path id="leaf" stroke="white"  stroke-width="2"  stroke-miterlimit="50" d="M 185 90 c -10 -10 -25 2 -35 10
+            c 18 13 25 2 35 -5
+            "/>
+            </g>
+            <g filter="url(#f1)" id="sec" transform="matrix(1.08 0 0 1.08 -15 -18)" >
+
+            <path  stroke="white" fill="none" stroke-miterlimit="50" d="
+                M100 300 h -20 q -10 0 -10 -15 v -150 q 0 -10 10 -10  h 220 q 10 0 10 10 v 150 q 0 10 -10 10 h -80
+                v 40 q 0 10 10 10 h 70 l 20 30 h -260 l 20 -30 h 80 q 10 0 10 -10 v -26 q 0 -10 -10 -10
+                h -15 q -10 0 -10 -10 v -25 q 0 -5 5 -5 h -20 q -10 -2 -10 -5 c 8 -40 15 -80 40 -110
+                q 6 -12 30 -18 h 20 c 30 10 35 50 0 50 q -20 -8 -10 -30
+            "/>
+            <path id="saghe" stroke="white" fill="none"  stroke-miterlimit="50" d="M 200 125 c -2 -10 2 -25 -15 -30 "/>
+            <path id="leaf" stroke="white" fill="none"  stroke-width="2"  stroke-miterlimit="50" d="M 185 90 c -10 -10 -25 2 -35 10
+            c 18 13 25 2 35 -5
+            "/>
+            </g>
+
+            <g id="third" filter="url(#f1)" transform="matrix(0.93 0 0 0.93 14 15)">
+                <path  stroke="white" fill="none" stroke-miterlimit="50" d="
+                M100 300 h -20 q -10 0 -10 -15 v -150 q 0 -10 10 -10  h 220 q 10 0 10 10 v 150 q 0 10 -10 10 h -80
+                v 40 q 0 10 10 10 h 70 l 20 30 h -260 l 20 -30 h 80 q 10 0 10 -10 v -26 q 0 -10 -10 -10
+                h -15 q -10 0 -10 -10 v -25 q 0 -5 5 -5 h -20 q -10 -2 -10 -5 c 8 -40 15 -80 40 -110
+                q 6 -12 30 -18 h 20 c 30 10 35 50 0 50 q -20 -8 -10 -30
+            "/>
+                <path id="saghe" stroke="white" fill="none"  stroke-miterlimit="50" d="M 200 125 c -2 -10 2 -25 -15 -30 "/>
+                <path id="leaf" stroke="white" fill="none"  stroke-width="2"  stroke-miterlimit="50" d="M 185 90 c -10 -10 -25 2 -35 10
+            c 18 13 25 2 35 -5
+            "/>
+            </g>
+        </svg>
+    </div>
+    <div id="hi" class="col">‌‌</div>
+    <div id="AUT"></div>
+</body>
+<script src="myJS.js"></script>
+</html>

@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "IranSans";
+    src : url("IRANSans.woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    src : url("Lato-Thin.ttf");
+}
+body  {
+    width : 100%;
+    padding : 0;
+    position: relative;
+    background: black;
+    font-family: IranSans;
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+
+
+#hi {
+    /*padding-top: 10%;*/
+    font-size: 30px;
+    margin: auto;
+    /*position: absolute;*/
+    text-align: center;
+
+}
+
+#AUT {
+    /*padding-top: 30%;*/
+    font-family: Lato;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    /*position: absolute;*/
+
+}
+
+/*svg path {*/
+    /*background: whitesmoke;*/
+    /*stroke-dashoffset: 0;*/
+    /*animation: first 5s infinite ease;*/
+/*}*/
+
+/*@keyframes first {*/
+    /*to{stroke-dashoffset: 120}*/
+/*}*/
+
+/**
+ * Attempt for Chrome-style progress-indicator with SVG and CSS animations
+ */
+
+@keyframes spin {
+    /*0% {*/
+        /*stroke-dashoffset: 0;*/
+    /*}*/
+    /*/!*37.5% {*!/*/
+        /*/!*stroke: #ed1c24;*!/*/
+    /*/!*}*!/*/
+    /*50% {*/
+        /*stroke-dashoffset: 1800;*/
+    /*}*/
+    100%{
+        stroke-dashoffset: 0;
+        /*stroke: #00aeef;*/
+    }
+}
+
+svg {
+    width: 500px;
+    height: 500px;
+    /*opacity: 0.5;*/
+}
+
+#first path {
+    /*stroke: white;*/
+    stroke-linecap: round;
+    stroke-width: 4;
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+    stroke-linejoin: round;
+    animation: spin 7s ease;
+    stroke: #e5e5e5;
+
+}
+
+#first #saghe {
+    animation-delay: 6s;
+}
+
+#first #leaf {
+    animation-delay: 6.5s;
+}
+
+
+#sec path {
+    /*stroke: white;*/
+    stroke-linecap: round;
+    stroke-width: 4;
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+    stroke-linejoin: round;
+    /*animation-delay: s;*/
+    animation: spin 9s ease ;
+    stroke: #e5e5e5;
+}
+
+
+#sec #saghe {
+    animation-delay: 8s;
+}
+
+#sec #leaf {
+    animation-delay: 8.5s;
+}
+
+
+#third path {
+    /*stroke: white;*/
+    stroke-linecap: round;
+    stroke-width: 4;
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+    stroke-linejoin: round;
+    /*animation-delay: s;*/
+    animation: spin 5s ease;
+    stroke: #e5e5e5;
+}
+
+#third #saghe {
+    animation-delay: 4s;
+}
+
+#third #leaf {
+    animation-delay: 4.5s;
+}
+
+
+#saghe {
+    stroke-width: 4px;
+}
+
+#leaf {
+    stroke-width: 2px;
+}
+
+#logo {
+    /*/!*padding-left: 7*/
+    margin-top: 5%;
+    margin-left: 6%;
+    text-align: center;
+}
